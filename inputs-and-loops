@@ -1,0 +1,20 @@
+#computer number
+import random
+for r in range(1):
+  r=random.randint(1,51)
+
+#guessed number
+y=input('pick a number 1 thru 50: ')
+y=int(y)
+
+while y is not r:
+    if y>r:
+        print('too high')
+    if y<r:
+        print('too low')
+    y=input('pick again: ')
+    y=int(y)
+
+if y is r:
+    print(r)
+    print('nailed it')
